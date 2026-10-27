@@ -135,6 +135,3 @@ For reproducible experiments, document:
 - Number of repetitions and timing methodology.
 - Exact commands used to generate the CSV files and plots.
 
-## Author
-
-**Disha**
