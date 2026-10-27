@@ -1,0 +1,5141 @@
+PS C:\Users\disha\OneDrive\Desktop\DAA\MFARS_Project> python -u "c:\Users\disha\OneDrive\Desktop\DAA\MFARS_Project\m_fars_v1_4.py"
+====================================================================
+M-FARS VERSION 1.4
+MULTI-UPDATE AMORTIZATION BENCHMARK
+====================================================================
+
+Starting fair multi-update experiments...
+Graphs: 4 | Scenarios: 6 | Experiments/case: 10
+Update counts: [1, 5, 10, 25, 50]
+Total case configurations: 120
+
+
+####################################################################
+UPDATE COUNT = 1
+####################################################################
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004613 seconds
+  M-FARS total updates:      0.00000094 seconds
+  Dijkstra total updates:    0.00002361 seconds
+  M-FARS amortized total:    0.00004707 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000094 seconds
+  Dijkstra update:            0.00002361 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             42.50
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       126.20
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        25.117x
+  Amortized speedup:           0.502x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004594 seconds
+  M-FARS total updates:      0.00000090 seconds
+  Dijkstra total updates:    0.00002451 seconds
+  M-FARS amortized total:    0.00004684 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000090 seconds
+  Dijkstra update:            0.00002451 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             42.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       125.70
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        27.233x
+  Amortized speedup:           0.523x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 20.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004783 seconds
+  M-FARS total updates:      0.00004858 seconds
+  Dijkstra total updates:    0.00002369 seconds
+  M-FARS amortized total:    0.00009641 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00004858 seconds
+  Dijkstra update:            0.00002369 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             45.80
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       136.20
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.488x
+  Amortized speedup:           0.246x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 30.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005675 seconds
+  M-FARS total updates:      0.00005710 seconds
+  Dijkstra total updates:    0.00003798 seconds
+  M-FARS amortized total:    0.00011385 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005710 seconds
+  Dijkstra update:            0.00003798 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             56.70
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       171.20
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.665x
+  Amortized speedup:           0.334x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00017235 seconds
+  M-FARS total updates:      0.00001194 seconds
+  Dijkstra total updates:    0.00012757 seconds
+  M-FARS amortized total:    0.00018429 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001194 seconds
+  Dijkstra update:            0.00012757 seconds
+
+NODES:
+  M-FARS nodes:               1.60
+  Dijkstra nodes:             42.80
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         4.70
+  Dijkstra relaxations:       126.80
+
+EFFICIENCY:
+  Work reduction:             96.29%
+  Update-only speedup:        10.684x
+  Amortized speedup:           0.692x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00008270 seconds
+  M-FARS total updates:      0.00000464 seconds
+  Dijkstra total updates:    0.00004513 seconds
+  M-FARS amortized total:    0.00008734 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000464 seconds
+  Dijkstra update:            0.00004513 seconds
+
+NODES:
+  M-FARS nodes:               2.20
+  Dijkstra nodes:             43.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         6.70
+  Dijkstra relaxations:       128.60
+
+EFFICIENCY:
+  Work reduction:             94.79%
+  Update-only speedup:        9.726x
+  Amortized speedup:           0.517x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00032101 seconds
+  M-FARS total updates:      0.00000154 seconds
+  Dijkstra total updates:    0.00020583 seconds
+  M-FARS amortized total:    0.00032255 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000154 seconds
+  Dijkstra update:            0.00020583 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             236.70
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       706.90
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        133.656x
+  Amortized speedup:           0.638x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00030967 seconds
+  M-FARS total updates:      0.00000151 seconds
+  Dijkstra total updates:    0.00017527 seconds
+  M-FARS amortized total:    0.00031118 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000151 seconds
+  Dijkstra update:            0.00017527 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             236.40
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       705.70
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        116.073x
+  Amortized speedup:           0.563x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 10.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031215 seconds
+  M-FARS total updates:      0.00031742 seconds
+  Dijkstra total updates:    0.00018924 seconds
+  M-FARS amortized total:    0.00062957 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00031742 seconds
+  Dijkstra update:            0.00018924 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             260.00
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       774.70
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.596x
+  Amortized speedup:           0.301x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 50.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00029899 seconds
+  M-FARS total updates:      0.00030968 seconds
+  Dijkstra total updates:    0.00021740 seconds
+  M-FARS amortized total:    0.00060867 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00030968 seconds
+  Dijkstra update:            0.00021740 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             305.90
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       911.10
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.702x
+  Amortized speedup:           0.357x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00032932 seconds
+  M-FARS total updates:      0.00000632 seconds
+  Dijkstra total updates:    0.00019005 seconds
+  M-FARS amortized total:    0.00033564 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000632 seconds
+  Dijkstra update:            0.00019005 seconds
+
+NODES:
+  M-FARS nodes:               5.30
+  Dijkstra nodes:             237.40
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         16.20
+  Dijkstra relaxations:       708.40
+
+EFFICIENCY:
+  Work reduction:             97.71%
+  Update-only speedup:        30.071x
+  Amortized speedup:           0.566x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031124 seconds
+  M-FARS total updates:      0.00000833 seconds
+  Dijkstra total updates:    0.00017476 seconds
+  M-FARS amortized total:    0.00031957 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000833 seconds
+  Dijkstra update:            0.00017476 seconds
+
+NODES:
+  M-FARS nodes:               9.20
+  Dijkstra nodes:             237.60
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         29.60
+  Dijkstra relaxations:       708.80
+
+EFFICIENCY:
+  Work reduction:             95.82%
+  Update-only speedup:        20.980x
+  Amortized speedup:           0.547x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00070470 seconds
+  M-FARS total updates:      0.00000207 seconds
+  Dijkstra total updates:    0.00039210 seconds
+  M-FARS amortized total:    0.00070677 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000207 seconds
+  Dijkstra update:            0.00039210 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             469.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1402.40
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        189.420x
+  Amortized speedup:           0.555x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00073476 seconds
+  M-FARS total updates:      0.00000287 seconds
+  Dijkstra total updates:    0.00043428 seconds
+  M-FARS amortized total:    0.00073763 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000287 seconds
+  Dijkstra update:            0.00043428 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             469.00
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1401.70
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        151.317x
+  Amortized speedup:           0.589x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 10.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00065893 seconds
+  M-FARS total updates:      0.00063123 seconds
+  Dijkstra total updates:    0.00037436 seconds
+  M-FARS amortized total:    0.00129016 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00063123 seconds
+  Dijkstra update:            0.00037436 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             486.00
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1453.90
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.593x
+  Amortized speedup:           0.290x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 20.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00066340 seconds
+  M-FARS total updates:      0.00065569 seconds
+  Dijkstra total updates:    0.00047406 seconds
+  M-FARS amortized total:    0.00131909 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00065569 seconds
+  Dijkstra update:            0.00047406 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             547.70
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1642.90
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.723x
+  Amortized speedup:           0.359x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00069739 seconds
+  M-FARS total updates:      0.00000458 seconds
+  Dijkstra total updates:    0.00040634 seconds
+  M-FARS amortized total:    0.00070197 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000458 seconds
+  Dijkstra update:            0.00040634 seconds
+
+NODES:
+  M-FARS nodes:               1.00
+  Dijkstra nodes:             469.40
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         2.80
+  Dijkstra relaxations:       1402.70
+
+EFFICIENCY:
+  Work reduction:             99.80%
+  Update-only speedup:        88.721x
+  Amortized speedup:           0.579x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00069566 seconds
+  M-FARS total updates:      0.00000474 seconds
+  Dijkstra total updates:    0.00036731 seconds
+  M-FARS amortized total:    0.00070040 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000474 seconds
+  Dijkstra update:            0.00036731 seconds
+
+NODES:
+  M-FARS nodes:               1.30
+  Dijkstra nodes:             469.50
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         3.60
+  Dijkstra relaxations:       1403.00
+
+EFFICIENCY:
+  Work reduction:             99.74%
+  Update-only speedup:        77.492x
+  Amortized speedup:           0.524x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00855504 seconds
+  M-FARS total updates:      0.00000558 seconds
+  Dijkstra total updates:    0.00525008 seconds
+  M-FARS amortized total:    0.00856062 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000558 seconds
+  Dijkstra update:            0.00525008 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2209.10
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       6637.30
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        940.875x
+  Amortized speedup:           0.613x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.01229929 seconds
+  M-FARS total updates:      0.00000887 seconds
+  Dijkstra total updates:    0.00773654 seconds
+  M-FARS amortized total:    0.01230816 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000887 seconds
+  Dijkstra update:            0.00773654 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2209.00
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       6637.20
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        872.214x
+  Amortized speedup:           0.629x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  10 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 10.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.01231087 seconds
+  M-FARS total updates:      0.01060068 seconds
+  Dijkstra total updates:    0.00654591 seconds
+  M-FARS amortized total:    0.02291155 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.01060068 seconds
+  Dijkstra update:            0.00654591 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2442.10
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       7330.70
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.617x
+  Amortized speedup:           0.286x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 50.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.01182631 seconds
+  M-FARS total updates:      0.01061766 seconds
+  Dijkstra total updates:    0.00966023 seconds
+  M-FARS amortized total:    0.02244397 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.01061766 seconds
+  Dijkstra update:            0.00966023 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             3013.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       9034.50
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.910x
+  Amortized speedup:           0.430x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00852678 seconds
+  M-FARS total updates:      0.00001456 seconds
+  Dijkstra total updates:    0.00621633 seconds
+  M-FARS amortized total:    0.00854134 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001456 seconds
+  Dijkstra update:            0.00621633 seconds
+
+NODES:
+  M-FARS nodes:               0.60
+  Dijkstra nodes:             2209.10
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         1.50
+  Dijkstra relaxations:       6637.30
+
+EFFICIENCY:
+  Work reduction:             99.98%
+  Update-only speedup:        426.946x
+  Amortized speedup:           0.728x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 1
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00734152 seconds
+  M-FARS total updates:      0.00001252 seconds
+  Dijkstra total updates:    0.00459160 seconds
+  M-FARS amortized total:    0.00735404 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001252 seconds
+  Dijkstra update:            0.00459160 seconds
+
+NODES:
+  M-FARS nodes:               1.40
+  Dijkstra nodes:             2209.20
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         3.70
+  Dijkstra relaxations:       6637.60
+
+EFFICIENCY:
+  Work reduction:             99.94%
+  Update-only speedup:        366.741x
+  Amortized speedup:           0.624x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  10 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+####################################################################
+UPDATE COUNT = 5
+####################################################################
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004945 seconds
+  M-FARS total updates:      0.00000346 seconds
+  Dijkstra total updates:    0.00014923 seconds
+  M-FARS amortized total:    0.00005291 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000069 seconds
+  Dijkstra update:            0.00002985 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             50.06
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       147.54
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        43.130x
+  Amortized speedup:           2.820x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005231 seconds
+  M-FARS total updates:      0.00000336 seconds
+  Dijkstra total updates:    0.00015346 seconds
+  M-FARS amortized total:    0.00005567 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000067 seconds
+  Dijkstra update:            0.00003069 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             49.80
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       146.60
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        45.673x
+  Amortized speedup:           2.757x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 24.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005638 seconds
+  M-FARS total updates:      0.00025663 seconds
+  Dijkstra total updates:    0.00016920 seconds
+  M-FARS amortized total:    0.00031301 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005133 seconds
+  Dijkstra update:            0.00003384 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             58.82
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       174.38
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.659x
+  Amortized speedup:           0.541x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 78.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005924 seconds
+  M-FARS total updates:      0.00032295 seconds
+  Dijkstra total updates:    0.00024130 seconds
+  M-FARS amortized total:    0.00038219 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00006459 seconds
+  Dijkstra update:            0.00004826 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             76.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       227.24
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.747x
+  Amortized speedup:           0.631x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005334 seconds
+  M-FARS total updates:      0.00000988 seconds
+  Dijkstra total updates:    0.00013032 seconds
+  M-FARS amortized total:    0.00006322 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000198 seconds
+  Dijkstra update:            0.00002606 seconds
+
+NODES:
+  M-FARS nodes:               1.58
+  Dijkstra nodes:             50.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         4.34
+  Dijkstra relaxations:       148.06
+
+EFFICIENCY:
+  Work reduction:             97.07%
+  Update-only speedup:        13.190x
+  Amortized speedup:           2.061x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00006065 seconds
+  M-FARS total updates:      0.00001194 seconds
+  Dijkstra total updates:    0.00016609 seconds
+  M-FARS amortized total:    0.00007259 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000239 seconds
+  Dijkstra update:            0.00003322 seconds
+
+NODES:
+  M-FARS nodes:               1.80
+  Dijkstra nodes:             50.62
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         4.98
+  Dijkstra relaxations:       148.72
+
+EFFICIENCY:
+  Work reduction:             96.65%
+  Update-only speedup:        13.910x
+  Amortized speedup:           2.288x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 2.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00030818 seconds
+  M-FARS total updates:      0.00003548 seconds
+  Dijkstra total updates:    0.00083584 seconds
+  M-FARS amortized total:    0.00034366 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000710 seconds
+  Dijkstra update:            0.00016717 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             205.40
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       614.60
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        23.558x
+  Amortized speedup:           2.432x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  49 ( 98.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  2.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031300 seconds
+  M-FARS total updates:      0.00000492 seconds
+  Dijkstra total updates:    0.00073807 seconds
+  M-FARS amortized total:    0.00031792 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000098 seconds
+  Dijkstra update:            0.00014761 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             205.16
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       613.98
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        150.014x
+  Amortized speedup:           2.322x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 20.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00034150 seconds
+  M-FARS total updates:      0.00155241 seconds
+  Dijkstra total updates:    0.00105843 seconds
+  M-FARS amortized total:    0.00189391 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00031048 seconds
+  Dijkstra update:            0.00021169 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             269.28
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       803.66
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.682x
+  Amortized speedup:           0.559x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 68.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00030778 seconds
+  M-FARS total updates:      0.00166722 seconds
+  Dijkstra total updates:    0.00149203 seconds
+  M-FARS amortized total:    0.00197500 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00033344 seconds
+  Dijkstra update:            0.00029841 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             367.34
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1096.14
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.895x
+  Amortized speedup:           0.755x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 2.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00033028 seconds
+  M-FARS total updates:      0.00002003 seconds
+  Dijkstra total updates:    0.00082227 seconds
+  M-FARS amortized total:    0.00035031 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000401 seconds
+  Dijkstra update:            0.00016445 seconds
+
+NODES:
+  M-FARS nodes:               1.96
+  Dijkstra nodes:             205.16
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         5.98
+  Dijkstra relaxations:       613.86
+
+EFFICIENCY:
+  Work reduction:             99.03%
+  Update-only speedup:        41.052x
+  Amortized speedup:           2.347x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031682 seconds
+  M-FARS total updates:      0.00002178 seconds
+  Dijkstra total updates:    0.00079773 seconds
+  M-FARS amortized total:    0.00033860 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000436 seconds
+  Dijkstra update:            0.00015955 seconds
+
+NODES:
+  M-FARS nodes:               3.16
+  Dijkstra nodes:             205.98
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         9.48
+  Dijkstra relaxations:       616.34
+
+EFFICIENCY:
+  Work reduction:             98.46%
+  Update-only speedup:        36.627x
+  Amortized speedup:           2.356x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00070947 seconds
+  M-FARS total updates:      0.00000803 seconds
+  Dijkstra total updates:    0.00223074 seconds
+  M-FARS amortized total:    0.00071750 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000161 seconds
+  Dijkstra update:            0.00044615 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             481.84
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1440.82
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        277.801x
+  Amortized speedup:           3.109x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00066182 seconds
+  M-FARS total updates:      0.00000664 seconds
+  Dijkstra total updates:    0.00188494 seconds
+  M-FARS amortized total:    0.00066846 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000133 seconds
+  Dijkstra update:            0.00037699 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             481.58
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1439.92
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        283.877x
+  Amortized speedup:           2.820x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 40.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00081266 seconds
+  M-FARS total updates:      0.00359049 seconds
+  Dijkstra total updates:    0.00223023 seconds
+  M-FARS amortized total:    0.00440315 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00071810 seconds
+  Dijkstra update:            0.00044605 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             560.90
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1675.40
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.621x
+  Amortized speedup:           0.507x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 74.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00073531 seconds
+  M-FARS total updates:      0.00355862 seconds
+  Dijkstra total updates:    0.00279426 seconds
+  M-FARS amortized total:    0.00429393 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00071172 seconds
+  Dijkstra update:            0.00055885 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             693.42
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2076.00
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.785x
+  Amortized speedup:           0.651x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00074093 seconds
+  M-FARS total updates:      0.00003153 seconds
+  Dijkstra total updates:    0.00243374 seconds
+  M-FARS amortized total:    0.00077246 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000631 seconds
+  Dijkstra update:            0.00048675 seconds
+
+NODES:
+  M-FARS nodes:               2.92
+  Dijkstra nodes:             482.22
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         8.52
+  Dijkstra relaxations:       1441.56
+
+EFFICIENCY:
+  Work reduction:             99.41%
+  Update-only speedup:        77.188x
+  Amortized speedup:           3.151x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00060491 seconds
+  M-FARS total updates:      0.00001960 seconds
+  Dijkstra total updates:    0.00182726 seconds
+  M-FARS amortized total:    0.00062451 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000392 seconds
+  Dijkstra update:            0.00036545 seconds
+
+NODES:
+  M-FARS nodes:               1.36
+  Dijkstra nodes:             482.54
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         3.94
+  Dijkstra relaxations:       1442.56
+
+EFFICIENCY:
+  Work reduction:             99.73%
+  Update-only speedup:        93.228x
+  Amortized speedup:           2.926x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00993891 seconds
+  M-FARS total updates:      0.00003922 seconds
+  Dijkstra total updates:    0.03118117 seconds
+  M-FARS amortized total:    0.00997813 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000784 seconds
+  Dijkstra update:            0.00623623 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2807.12
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       8437.84
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        795.032x
+  Amortized speedup:           3.125x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00503161 seconds
+  M-FARS total updates:      0.00002177 seconds
+  Dijkstra total updates:    0.01987126 seconds
+  M-FARS amortized total:    0.00505338 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000435 seconds
+  Dijkstra update:            0.00397425 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2806.70
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       8436.32
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        912.782x
+  Amortized speedup:           3.932x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  50 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 30.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00883746 seconds
+  M-FARS total updates:      0.04151434 seconds
+  Dijkstra total updates:    0.03872623 seconds
+  M-FARS amortized total:    0.05035180 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00830287 seconds
+  Dijkstra update:            0.00774525 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             3419.90
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       10269.46
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.933x
+  Amortized speedup:           0.769x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 86.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00830674 seconds
+  M-FARS total updates:      0.03325353 seconds
+  Dijkstra total updates:    0.03396788 seconds
+  M-FARS amortized total:    0.04156027 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00665071 seconds
+  Dijkstra update:            0.00679358 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             4136.12
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       12418.22
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.021x
+  Amortized speedup:           0.817x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  50 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00771285 seconds
+  M-FARS total updates:      0.00007632 seconds
+  Dijkstra total updates:    0.03014737 seconds
+  M-FARS amortized total:    0.00778917 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001526 seconds
+  Dijkstra update:            0.00602947 seconds
+
+NODES:
+  M-FARS nodes:               1.66
+  Dijkstra nodes:             2807.30
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         4.82
+  Dijkstra relaxations:       8438.50
+
+EFFICIENCY:
+  Work reduction:             99.94%
+  Update-only speedup:        395.013x
+  Amortized speedup:           3.870x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 5
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00606083 seconds
+  M-FARS total updates:      0.00005318 seconds
+  Dijkstra total updates:    0.01993800 seconds
+  M-FARS amortized total:    0.00611401 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001064 seconds
+  Dijkstra update:            0.00398760 seconds
+
+NODES:
+  M-FARS nodes:               1.94
+  Dijkstra nodes:             2807.76
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         5.82
+  Dijkstra relaxations:       8439.68
+
+EFFICIENCY:
+  Work reduction:             99.93%
+  Update-only speedup:        374.915x
+  Amortized speedup:           3.261x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :  50 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+####################################################################
+UPDATE COUNT = 10
+####################################################################
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004828 seconds
+  M-FARS total updates:      0.00001043 seconds
+  Dijkstra total updates:    0.00022636 seconds
+  M-FARS amortized total:    0.00005871 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000104 seconds
+  Dijkstra update:            0.00002264 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             43.52
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       125.12
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        21.703x
+  Amortized speedup:           3.856x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  99 ( 99.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  1.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00008995 seconds
+  M-FARS total updates:      0.00000955 seconds
+  Dijkstra total updates:    0.00031500 seconds
+  M-FARS amortized total:    0.00009950 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000095 seconds
+  Dijkstra update:            0.00003150 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             42.95
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       123.45
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        32.984x
+  Amortized speedup:           3.166x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 100 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 34.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00006303 seconds
+  M-FARS total updates:      0.00056852 seconds
+  Dijkstra total updates:    0.00032984 seconds
+  M-FARS amortized total:    0.00063155 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005685 seconds
+  Dijkstra update:            0.00003298 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             55.32
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       161.28
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.580x
+  Amortized speedup:           0.522x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 69.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00008019 seconds
+  M-FARS total updates:      0.00056447 seconds
+  Dijkstra total updates:    0.00045742 seconds
+  M-FARS amortized total:    0.00064466 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005645 seconds
+  Dijkstra update:            0.00004574 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             78.95
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       234.12
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.810x
+  Amortized speedup:           0.710x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00007617 seconds
+  M-FARS total updates:      0.00004371 seconds
+  Dijkstra total updates:    0.00029622 seconds
+  M-FARS amortized total:    0.00011988 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000437 seconds
+  Dijkstra update:            0.00002962 seconds
+
+NODES:
+  M-FARS nodes:               2.90
+  Dijkstra nodes:             44.45
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         8.77
+  Dijkstra relaxations:       128.52
+
+EFFICIENCY:
+  Work reduction:             93.18%
+  Update-only speedup:        6.777x
+  Amortized speedup:           2.471x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 2.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00006074 seconds
+  M-FARS total updates:      0.00003312 seconds
+  Dijkstra total updates:    0.00029657 seconds
+  M-FARS amortized total:    0.00009386 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000331 seconds
+  Dijkstra update:            0.00002966 seconds
+
+NODES:
+  M-FARS nodes:               3.22
+  Dijkstra nodes:             44.20
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         9.83
+  Dijkstra relaxations:       127.75
+
+EFFICIENCY:
+  Work reduction:             92.31%
+  Update-only speedup:        8.954x
+  Amortized speedup:           3.160x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00032619 seconds
+  M-FARS total updates:      0.00003913 seconds
+  Dijkstra total updates:    0.00135421 seconds
+  M-FARS amortized total:    0.00036532 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000391 seconds
+  Dijkstra update:            0.00013542 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             197.05
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       589.42
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        34.608x
+  Amortized speedup:           3.707x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  99 ( 99.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  1.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 1.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00033172 seconds
+  M-FARS total updates:      0.00003899 seconds
+  Dijkstra total updates:    0.00145243 seconds
+  M-FARS amortized total:    0.00037071 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000390 seconds
+  Dijkstra update:            0.00014524 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             197.70
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       591.44
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        37.251x
+  Amortized speedup:           3.918x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  99 ( 99.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  1.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 32.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00029265 seconds
+  M-FARS total updates:      0.00291096 seconds
+  Dijkstra total updates:    0.00213688 seconds
+  M-FARS amortized total:    0.00320361 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00029110 seconds
+  Dijkstra update:            0.00021369 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             297.13
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       888.05
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.734x
+  Amortized speedup:           0.667x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 87.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00048523 seconds
+  M-FARS total updates:      0.00453867 seconds
+  Dijkstra total updates:    0.00407485 seconds
+  M-FARS amortized total:    0.00502390 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00045387 seconds
+  Dijkstra update:            0.00040748 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             410.19
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1227.77
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.898x
+  Amortized speedup:           0.811x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00046053 seconds
+  M-FARS total updates:      0.00004021 seconds
+  Dijkstra total updates:    0.00164411 seconds
+  M-FARS amortized total:    0.00050074 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000402 seconds
+  Dijkstra update:            0.00016441 seconds
+
+NODES:
+  M-FARS nodes:               1.77
+  Dijkstra nodes:             197.57
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         5.19
+  Dijkstra relaxations:       591.52
+
+EFFICIENCY:
+  Work reduction:             99.12%
+  Update-only speedup:        40.888x
+  Amortized speedup:           3.283x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00041978 seconds
+  M-FARS total updates:      0.00004625 seconds
+  Dijkstra total updates:    0.00175017 seconds
+  M-FARS amortized total:    0.00046603 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000463 seconds
+  Dijkstra update:            0.00017502 seconds
+
+NODES:
+  M-FARS nodes:               1.64
+  Dijkstra nodes:             197.66
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         4.79
+  Dijkstra relaxations:       591.45
+
+EFFICIENCY:
+  Work reduction:             99.19%
+  Update-only speedup:        37.842x
+  Amortized speedup:           3.755x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00099707 seconds
+  M-FARS total updates:      0.00013739 seconds
+  Dijkstra total updates:    0.00548626 seconds
+  M-FARS amortized total:    0.00113446 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001374 seconds
+  Dijkstra update:            0.00054863 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             462.26
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1374.87
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        39.932x
+  Amortized speedup:           4.836x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  99 ( 99.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  1.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 1.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00090192 seconds
+  M-FARS total updates:      0.00017649 seconds
+  Dijkstra total updates:    0.00548723 seconds
+  M-FARS amortized total:    0.00107841 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001765 seconds
+  Dijkstra update:            0.00054872 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             462.59
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1375.61
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        31.091x
+  Amortized speedup:           5.088x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :  99 ( 99.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  1.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 52.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00071123 seconds
+  M-FARS total updates:      0.01050607 seconds
+  Dijkstra total updates:    0.00749749 seconds
+  M-FARS amortized total:    0.01121730 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00105061 seconds
+  Dijkstra update:            0.00074975 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             583.94
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1739.51
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.714x
+  Amortized speedup:           0.668x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 88.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00075434 seconds
+  M-FARS total updates:      0.01112511 seconds
+  Dijkstra total updates:    0.01070267 seconds
+  M-FARS amortized total:    0.01187945 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00111251 seconds
+  Dijkstra update:            0.00107027 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             756.45
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2257.94
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.962x
+  Amortized speedup:           0.901x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00097729 seconds
+  M-FARS total updates:      0.00009768 seconds
+  Dijkstra total updates:    0.00533284 seconds
+  M-FARS amortized total:    0.00107497 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000977 seconds
+  Dijkstra update:            0.00053328 seconds
+
+NODES:
+  M-FARS nodes:               3.97
+  Dijkstra nodes:             462.74
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         11.93
+  Dijkstra relaxations:       1376.73
+
+EFFICIENCY:
+  Work reduction:             99.13%
+  Update-only speedup:        54.595x
+  Amortized speedup:           4.961x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00101136 seconds
+  M-FARS total updates:      0.00016455 seconds
+  Dijkstra total updates:    0.00575304 seconds
+  M-FARS amortized total:    0.00117591 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001646 seconds
+  Dijkstra update:            0.00057530 seconds
+
+NODES:
+  M-FARS nodes:               6.09
+  Dijkstra nodes:             464.79
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         18.30
+  Dijkstra relaxations:       1383.52
+
+EFFICIENCY:
+  Work reduction:             98.68%
+  Update-only speedup:        34.962x
+  Amortized speedup:           4.892x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00572457 seconds
+  M-FARS total updates:      0.00004743 seconds
+  Dijkstra total updates:    0.03559503 seconds
+  M-FARS amortized total:    0.00577200 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000474 seconds
+  Dijkstra update:            0.00355950 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2117.39
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       6351.96
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        750.475x
+  Amortized speedup:           6.167x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 100 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00849385 seconds
+  M-FARS total updates:      0.00008070 seconds
+  Dijkstra total updates:    0.05493048 seconds
+  M-FARS amortized total:    0.00857455 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000807 seconds
+  Dijkstra update:            0.00549305 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2115.88
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       6347.90
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        680.675x
+  Amortized speedup:           6.406x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 100 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 38.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00561954 seconds
+  M-FARS total updates:      0.05547078 seconds
+  Dijkstra total updates:    0.04434142 seconds
+  M-FARS amortized total:    0.06109032 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00554708 seconds
+  Dijkstra update:            0.00443414 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             3140.15
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       9419.42
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.799x
+  Amortized speedup:           0.726x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 91.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00562416 seconds
+  M-FARS total updates:      0.05823748 seconds
+  Dijkstra total updates:    0.05622354 seconds
+  M-FARS amortized total:    0.06386164 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00582375 seconds
+  Dijkstra update:            0.00562235 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             3937.52
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       11806.41
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.965x
+  Amortized speedup:           0.880x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 100 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00477788 seconds
+  M-FARS total updates:      0.00009409 seconds
+  Dijkstra total updates:    0.02650052 seconds
+  M-FARS amortized total:    0.00487197 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000941 seconds
+  Dijkstra update:            0.00265005 seconds
+
+NODES:
+  M-FARS nodes:               2.50
+  Dijkstra nodes:             2118.73
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         7.35
+  Dijkstra relaxations:       6355.93
+
+EFFICIENCY:
+  Work reduction:             99.88%
+  Update-only speedup:        281.651x
+  Amortized speedup:           5.439x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 10
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00525294 seconds
+  M-FARS total updates:      0.00008933 seconds
+  Dijkstra total updates:    0.02507136 seconds
+  M-FARS amortized total:    0.00534227 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000893 seconds
+  Dijkstra update:            0.00250714 seconds
+
+NODES:
+  M-FARS nodes:               2.38
+  Dijkstra nodes:             2120.03
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         6.72
+  Dijkstra relaxations:       6359.87
+
+EFFICIENCY:
+  Work reduction:             99.89%
+  Update-only speedup:        280.660x
+  Amortized speedup:           4.693x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 100 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+####################################################################
+UPDATE COUNT = 25
+####################################################################
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005459 seconds
+  M-FARS total updates:      0.00003967 seconds
+  Dijkstra total updates:    0.00054392 seconds
+  M-FARS amortized total:    0.00009426 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000159 seconds
+  Dijkstra update:            0.00002176 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             36.05
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       105.61
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        13.711x
+  Amortized speedup:           5.770x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 246 ( 98.40%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   4 (  1.60%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.40%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005637 seconds
+  M-FARS total updates:      0.00003366 seconds
+  Dijkstra total updates:    0.00051366 seconds
+  M-FARS amortized total:    0.00009003 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000135 seconds
+  Dijkstra update:            0.00002055 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             38.20
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       111.01
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        15.260x
+  Amortized speedup:           5.705x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 246 ( 98.40%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   4 (  1.60%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 57.60%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00007646 seconds
+  M-FARS total updates:      0.00138074 seconds
+  Dijkstra total updates:    0.00108375 seconds
+  M-FARS amortized total:    0.00145720 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005523 seconds
+  Dijkstra update:            0.00004335 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             74.78
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       222.32
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.785x
+  Amortized speedup:           0.744x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 91.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005143 seconds
+  M-FARS total updates:      0.00128049 seconds
+  Dijkstra total updates:    0.00129972 seconds
+  M-FARS amortized total:    0.00133192 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00005122 seconds
+  Dijkstra update:            0.00005199 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             90.82
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       270.46
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.015x
+  Amortized speedup:           0.976x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005118 seconds
+  M-FARS total updates:      0.00005349 seconds
+  Dijkstra total updates:    0.00047171 seconds
+  M-FARS amortized total:    0.00010467 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000214 seconds
+  Dijkstra update:            0.00001887 seconds
+
+NODES:
+  M-FARS nodes:               2.27
+  Dijkstra nodes:             35.27
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         6.85
+  Dijkstra relaxations:       102.67
+
+EFFICIENCY:
+  Work reduction:             93.33%
+  Update-only speedup:        8.819x
+  Amortized speedup:           4.507x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.80%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004787 seconds
+  M-FARS total updates:      0.00005777 seconds
+  Dijkstra total updates:    0.00051575 seconds
+  M-FARS amortized total:    0.00010564 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000231 seconds
+  Dijkstra update:            0.00002063 seconds
+
+NODES:
+  M-FARS nodes:               2.36
+  Dijkstra nodes:             37.65
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         7.14
+  Dijkstra relaxations:       109.87
+
+EFFICIENCY:
+  Work reduction:             93.50%
+  Update-only speedup:        8.928x
+  Amortized speedup:           4.882x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.40%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00033472 seconds
+  M-FARS total updates:      0.00005370 seconds
+  Dijkstra total updates:    0.00411477 seconds
+  M-FARS amortized total:    0.00038842 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000215 seconds
+  Dijkstra update:            0.00016459 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             230.29
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       688.87
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        76.625x
+  Amortized speedup:           10.594x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 249 ( 99.60%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  0.40%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.80%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00034460 seconds
+  M-FARS total updates:      0.00010477 seconds
+  Dijkstra total updates:    0.00458560 seconds
+  M-FARS amortized total:    0.00044937 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000419 seconds
+  Dijkstra update:            0.00018342 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             229.95
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       687.10
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        43.768x
+  Amortized speedup:           10.205x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 248 ( 99.20%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   2 (  0.80%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 54.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031790 seconds
+  M-FARS total updates:      0.00773130 seconds
+  Dijkstra total updates:    0.00658106 seconds
+  M-FARS amortized total:    0.00804920 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00030925 seconds
+  Dijkstra update:            0.00026324 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             375.92
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1126.85
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.851x
+  Amortized speedup:           0.818x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 89.60%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00028906 seconds
+  M-FARS total updates:      0.00739614 seconds
+  Dijkstra total updates:    0.00741944 seconds
+  M-FARS amortized total:    0.00768520 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00029585 seconds
+  Dijkstra update:            0.00029678 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             448.20
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1343.53
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.003x
+  Amortized speedup:           0.965x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00031393 seconds
+  M-FARS total updates:      0.00008953 seconds
+  Dijkstra total updates:    0.00390209 seconds
+  M-FARS amortized total:    0.00040346 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000358 seconds
+  Dijkstra update:            0.00015608 seconds
+
+NODES:
+  M-FARS nodes:               3.06
+  Dijkstra nodes:             230.06
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         9.23
+  Dijkstra relaxations:       687.70
+
+EFFICIENCY:
+  Work reduction:             98.66%
+  Update-only speedup:        43.584x
+  Amortized speedup:           9.672x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00033205 seconds
+  M-FARS total updates:      0.00012473 seconds
+  Dijkstra total updates:    0.00397299 seconds
+  M-FARS amortized total:    0.00045678 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000499 seconds
+  Dijkstra update:            0.00015892 seconds
+
+NODES:
+  M-FARS nodes:               4.96
+  Dijkstra nodes:             226.89
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         14.85
+  Dijkstra relaxations:       677.61
+
+EFFICIENCY:
+  Work reduction:             97.81%
+  Update-only speedup:        31.853x
+  Amortized speedup:           8.698x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00065368 seconds
+  M-FARS total updates:      0.00009087 seconds
+  Dijkstra total updates:    0.00832512 seconds
+  M-FARS amortized total:    0.00074455 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000363 seconds
+  Dijkstra update:            0.00033300 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             441.39
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1327.26
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        91.616x
+  Amortized speedup:           11.181x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 249 ( 99.60%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  0.40%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00061090 seconds
+  M-FARS total updates:      0.00002597 seconds
+  Dijkstra total updates:    0.00812123 seconds
+  M-FARS amortized total:    0.00063687 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000104 seconds
+  Dijkstra update:            0.00032485 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             434.80
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1307.04
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        312.716x
+  Amortized speedup:           12.752x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 250 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 64.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00063824 seconds
+  M-FARS total updates:      0.01618105 seconds
+  Dijkstra total updates:    0.01374195 seconds
+  M-FARS amortized total:    0.01681929 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00064724 seconds
+  Dijkstra update:            0.00054968 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             713.24
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2140.81
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.849x
+  Amortized speedup:           0.817x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 89.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00063970 seconds
+  M-FARS total updates:      0.01543400 seconds
+  Dijkstra total updates:    0.01559016 seconds
+  M-FARS amortized total:    0.01607370 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00061736 seconds
+  Dijkstra update:            0.00062361 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             862.23
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2584.85
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.010x
+  Amortized speedup:           0.970x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00065738 seconds
+  M-FARS total updates:      0.00009993 seconds
+  Dijkstra total updates:    0.00822563 seconds
+  M-FARS amortized total:    0.00075731 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000400 seconds
+  Dijkstra update:            0.00032903 seconds
+
+NODES:
+  M-FARS nodes:               2.26
+  Dijkstra nodes:             441.08
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         6.91
+  Dijkstra relaxations:       1326.08
+
+EFFICIENCY:
+  Work reduction:             99.48%
+  Update-only speedup:        82.314x
+  Amortized speedup:           10.862x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00079275 seconds
+  M-FARS total updates:      0.00013409 seconds
+  Dijkstra total updates:    0.00896712 seconds
+  M-FARS amortized total:    0.00092684 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000536 seconds
+  Dijkstra update:            0.00035868 seconds
+
+NODES:
+  M-FARS nodes:               3.42
+  Dijkstra nodes:             442.76
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         10.40
+  Dijkstra relaxations:       1331.60
+
+EFFICIENCY:
+  Work reduction:             99.22%
+  Update-only speedup:        66.874x
+  Amortized speedup:           9.675x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00527540 seconds
+  M-FARS total updates:      0.00008975 seconds
+  Dijkstra total updates:    0.05728977 seconds
+  M-FARS amortized total:    0.00536515 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000359 seconds
+  Dijkstra update:            0.00229159 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             1812.03
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       5418.55
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        638.326x
+  Amortized speedup:           10.678x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 250 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00530160 seconds
+  M-FARS total updates:      0.00007301 seconds
+  Dijkstra total updates:    0.05223632 seconds
+  M-FARS amortized total:    0.00537461 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000292 seconds
+  Dijkstra update:            0.00208945 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             1807.84
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       5406.26
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        715.468x
+  Amortized speedup:           9.719x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 250 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 62.40%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00480029 seconds
+  M-FARS total updates:      0.11879229 seconds
+  Dijkstra total updates:    0.09795396 seconds
+  M-FARS amortized total:    0.12359258 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00475169 seconds
+  Dijkstra update:            0.00391816 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             3290.46
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       9870.04
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.825x
+  Amortized speedup:           0.793x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 89.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00544906 seconds
+  M-FARS total updates:      0.14239633 seconds
+  Dijkstra total updates:    0.15256928 seconds
+  M-FARS amortized total:    0.14784539 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00569585 seconds
+  Dijkstra update:            0.00610277 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             4336.50
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       13011.54
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.071x
+  Amortized speedup:           1.032x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 250 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00485799 seconds
+  M-FARS total updates:      0.00022447 seconds
+  Dijkstra total updates:    0.05274509 seconds
+  M-FARS amortized total:    0.00508246 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000898 seconds
+  Dijkstra update:            0.00210980 seconds
+
+NODES:
+  M-FARS nodes:               2.44
+  Dijkstra nodes:             1815.43
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         7.42
+  Dijkstra relaxations:       5428.31
+
+EFFICIENCY:
+  Work reduction:             99.86%
+  Update-only speedup:        234.976x
+  Amortized speedup:           10.378x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 25
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00596540 seconds
+  M-FARS total updates:      0.00036415 seconds
+  Dijkstra total updates:    0.07519112 seconds
+  M-FARS amortized total:    0.00632955 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001457 seconds
+  Dijkstra update:            0.00300764 seconds
+
+NODES:
+  M-FARS nodes:               3.72
+  Dijkstra nodes:             1819.12
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         11.02
+  Dijkstra relaxations:       5439.65
+
+EFFICIENCY:
+  Work reduction:             99.80%
+  Update-only speedup:        206.484x
+  Amortized speedup:           11.879x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 250 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+####################################################################
+UPDATE COUNT = 50
+####################################################################
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005176 seconds
+  M-FARS total updates:      0.00009969 seconds
+  Dijkstra total updates:    0.00165817 seconds
+  M-FARS amortized total:    0.00015145 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000199 seconds
+  Dijkstra update:            0.00003316 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             52.87
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       157.17
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        16.633x
+  Amortized speedup:           10.949x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 488 ( 97.60%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  12 (  2.40%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.80%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005835 seconds
+  M-FARS total updates:      0.00007879 seconds
+  Dijkstra total updates:    0.00151304 seconds
+  M-FARS amortized total:    0.00013714 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000158 seconds
+  Dijkstra update:            0.00003026 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             54.52
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       162.30
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        19.203x
+  Amortized speedup:           11.033x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 490 ( 98.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :  10 (  2.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 71.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005086 seconds
+  M-FARS total updates:      0.00241018 seconds
+  Dijkstra total updates:    0.00220715 seconds
+  M-FARS amortized total:    0.00246104 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00004820 seconds
+  Dijkstra update:            0.00004414 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             85.00
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       253.03
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.916x
+  Amortized speedup:           0.897x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 90.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005616 seconds
+  M-FARS total updates:      0.00244693 seconds
+  Dijkstra total updates:    0.00244544 seconds
+  M-FARS amortized total:    0.00250309 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00004894 seconds
+  Dijkstra update:            0.00004891 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             95.18
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       283.43
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.999x
+  Amortized speedup:           0.977x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00005151 seconds
+  M-FARS total updates:      0.00010977 seconds
+  Dijkstra total updates:    0.00145846 seconds
+  M-FARS amortized total:    0.00016128 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000220 seconds
+  Dijkstra update:            0.00002917 seconds
+
+NODES:
+  M-FARS nodes:               1.79
+  Dijkstra nodes:             52.21
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         5.34
+  Dijkstra relaxations:       154.15
+
+EFFICIENCY:
+  Work reduction:             96.53%
+  Update-only speedup:        13.287x
+  Amortized speedup:           9.043x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 100 nodes
+Edges: 300
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 1.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00004817 seconds
+  M-FARS total updates:      0.00014479 seconds
+  Dijkstra total updates:    0.00155682 seconds
+  M-FARS amortized total:    0.00019296 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000290 seconds
+  Dijkstra update:            0.00003114 seconds
+
+NODES:
+  M-FARS nodes:               2.54
+  Dijkstra nodes:             53.40
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         7.61
+  Dijkstra relaxations:       156.76
+
+EFFICIENCY:
+  Work reduction:             95.14%
+  Update-only speedup:        10.752x
+  Amortized speedup:           8.068x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00032018 seconds
+  M-FARS total updates:      0.00006536 seconds
+  Dijkstra total updates:    0.00560517 seconds
+  M-FARS amortized total:    0.00038554 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000131 seconds
+  Dijkstra update:            0.00011210 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             159.33
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       469.23
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        85.758x
+  Amortized speedup:           14.538x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 499 ( 99.80%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  0.20%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00030256 seconds
+  M-FARS total updates:      0.00003649 seconds
+  Dijkstra total updates:    0.00535508 seconds
+  M-FARS amortized total:    0.00033905 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000073 seconds
+  Dijkstra update:            0.00010710 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             153.80
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       454.26
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        146.755x
+  Amortized speedup:           15.794x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 500 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 67.80%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00029330 seconds
+  M-FARS total updates:      0.01524538 seconds
+  Dijkstra total updates:    0.01391813 seconds
+  M-FARS amortized total:    0.01553868 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00030491 seconds
+  Dijkstra update:            0.00027836 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             401.44
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1195.29
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        0.913x
+  Amortized speedup:           0.896x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 92.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00030192 seconds
+  M-FARS total updates:      0.01494683 seconds
+  Dijkstra total updates:    0.01593314 seconds
+  M-FARS amortized total:    0.01524875 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00029894 seconds
+  Dijkstra update:            0.00031866 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             472.62
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1412.41
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.066x
+  Amortized speedup:           1.045x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00032870 seconds
+  M-FARS total updates:      0.00016462 seconds
+  Dijkstra total updates:    0.00535665 seconds
+  M-FARS amortized total:    0.00049332 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000329 seconds
+  Dijkstra update:            0.00010713 seconds
+
+NODES:
+  M-FARS nodes:               2.74
+  Dijkstra nodes:             154.79
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         8.35
+  Dijkstra relaxations:       458.29
+
+EFFICIENCY:
+  Work reduction:             98.18%
+  Update-only speedup:        32.539x
+  Amortized speedup:           10.858x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 500 nodes
+Edges: 1500
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00029350 seconds
+  M-FARS total updates:      0.00015215 seconds
+  Dijkstra total updates:    0.00547960 seconds
+  M-FARS amortized total:    0.00044565 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000304 seconds
+  Dijkstra update:            0.00010959 seconds
+
+NODES:
+  M-FARS nodes:               2.16
+  Dijkstra nodes:             158.68
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         6.54
+  Dijkstra relaxations:       466.85
+
+EFFICIENCY:
+  Work reduction:             98.60%
+  Update-only speedup:        36.014x
+  Amortized speedup:           12.296x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.40%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00066146 seconds
+  M-FARS total updates:      0.00017736 seconds
+  Dijkstra total updates:    0.02423722 seconds
+  M-FARS amortized total:    0.00083882 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000355 seconds
+  Dijkstra update:            0.00048474 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             668.14
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2004.53
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        136.656x
+  Amortized speedup:           28.894x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 498 ( 99.60%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   2 (  0.40%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00063374 seconds
+  M-FARS total updates:      0.00012471 seconds
+  Dijkstra total updates:    0.02389156 seconds
+  M-FARS amortized total:    0.00075845 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000249 seconds
+  Dijkstra update:            0.00047783 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             663.32
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       1990.58
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        191.577x
+  Amortized speedup:           31.501x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 499 ( 99.80%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   1 (  0.20%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 77.60%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00068805 seconds
+  M-FARS total updates:      0.03307681 seconds
+  Dijkstra total updates:    0.03545145 seconds
+  M-FARS amortized total:    0.03376486 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00066154 seconds
+  Dijkstra update:            0.00070903 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             924.32
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2769.97
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.072x
+  Amortized speedup:           1.050x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 92.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00060388 seconds
+  M-FARS total updates:      0.03082210 seconds
+  Dijkstra total updates:    0.03419944 seconds
+  M-FARS amortized total:    0.03142598 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00061644 seconds
+  Dijkstra update:            0.00068399 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             970.94
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       2910.62
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.110x
+  Amortized speedup:           1.088x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00061019 seconds
+  M-FARS total updates:      0.00032076 seconds
+  Dijkstra total updates:    0.02639759 seconds
+  M-FARS amortized total:    0.00093095 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000642 seconds
+  Dijkstra update:            0.00052795 seconds
+
+NODES:
+  M-FARS nodes:               4.28
+  Dijkstra nodes:             672.08
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         12.57
+  Dijkstra relaxations:       2016.21
+
+EFFICIENCY:
+  Work reduction:             99.38%
+  Update-only speedup:        82.297x
+  Amortized speedup:           28.356x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 1000 nodes
+Edges: 3000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00059281 seconds
+  M-FARS total updates:      0.00027485 seconds
+  Dijkstra total updates:    0.02423676 seconds
+  M-FARS amortized total:    0.00086766 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000550 seconds
+  Dijkstra update:            0.00048474 seconds
+
+NODES:
+  M-FARS nodes:               4.63
+  Dijkstra nodes:             671.22
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         13.77
+  Dijkstra relaxations:       2013.82
+
+EFFICIENCY:
+  Work reduction:             99.32%
+  Update-only speedup:        88.182x
+  Amortized speedup:           27.933x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00506928 seconds
+  M-FARS total updates:      0.00016379 seconds
+  Dijkstra total updates:    0.16203402 seconds
+  M-FARS amortized total:    0.00523307 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000328 seconds
+  Dijkstra update:            0.00324068 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2695.42
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       8077.21
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        989.279x
+  Amortized speedup:           30.963x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 500 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00487458 seconds
+  M-FARS total updates:      0.00016587 seconds
+  Dijkstra total updates:    0.16088998 seconds
+  M-FARS amortized total:    0.00504045 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00000332 seconds
+  Dijkstra update:            0.00321780 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             2686.78
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       8050.78
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        969.976x
+  Amortized speedup:           31.920x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          : 500 (100.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_SMALL
+Update: increase_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 83.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00487252 seconds
+  M-FARS total updates:      0.25014286 seconds
+  Dijkstra total updates:    0.26534979 seconds
+  M-FARS amortized total:    0.25501538 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00500286 seconds
+  Dijkstra update:            0.00530700 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             4294.19
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       12866.54
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.061x
+  Amortized speedup:           1.041x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: SHORTEST_PATH_LARGE
+Update: increase_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 97.60%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00514431 seconds
+  M-FARS total updates:      0.25719167 seconds
+  Dijkstra total updates:    0.29074155 seconds
+  M-FARS amortized total:    0.26233598 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00514383 seconds
+  Dijkstra update:            0.00581483 seconds
+
+NODES:
+  M-FARS nodes:               0.00
+  Dijkstra nodes:             4697.88
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         0.00
+  Dijkstra relaxations:       14081.47
+
+EFFICIENCY:
+  Work reduction:             100.00%
+  Update-only speedup:        1.130x
+  Amortized speedup:           1.108x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      :   0 (  0.00%)
+  FULL_RECOMPUTATION  : 500 (100.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_SMALL
+Update: decrease_small
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.00%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00525710 seconds
+  M-FARS total updates:      0.00066620 seconds
+  Dijkstra total updates:    0.17637377 seconds
+  M-FARS amortized total:    0.00592330 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001332 seconds
+  Dijkstra update:            0.00352748 seconds
+
+NODES:
+  M-FARS nodes:               4.61
+  Dijkstra nodes:             2702.52
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         13.63
+  Dijkstra relaxations:       8095.91
+
+EFFICIENCY:
+  Work reduction:             99.83%
+  Update-only speedup:        264.746x
+  Amortized speedup:           29.776x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+Graph size: 5000 nodes
+Edges: 15000
+Update count on SAME graph: 50
+====================================================================
+
+Scenario: RANDOM_DECREASE_LARGE
+Update: decrease_large
+Experiments: 10
+
+Average M-FARS score: 0.0000
+Path changed: 0.20%
+Correctness: 100.00%
+
+TIME:
+  Preprocessing once/graph:  0.00510113 seconds
+  M-FARS total updates:      0.00072395 seconds
+  Dijkstra total updates:    0.15935459 seconds
+  M-FARS amortized total:    0.00582508 seconds
+
+PER-UPDATE AVERAGES:
+  M-FARS update:              0.00001448 seconds
+  Dijkstra update:            0.00318709 seconds
+
+NODES:
+  M-FARS nodes:               7.92
+  Dijkstra nodes:             2690.54
+
+EDGE RELAXATIONS:
+  M-FARS relaxations:         23.49
+  Dijkstra relaxations:       8062.02
+
+EFFICIENCY:
+  Work reduction:             99.71%
+  Update-only speedup:        220.118x
+  Amortized speedup:           27.357x
+
+STRATEGY DISTRIBUTION:
+  SAFE_REUSE          :   0 (  0.00%)
+  EXACT_DECREASE      : 500 (100.00%)
+  FULL_RECOMPUTATION  :   0 (  0.00%)
+
+====================================================================
+M-FARS V1.4 FINAL MULTI-UPDATE SUMMARY
+====================================================================
+
+Total correctness checks: 21840
+Overall correctness: 100.00%
+
+AGGREGATE TIMING:
+Preprocessing totals across cases: 0.23751034 seconds
+M-FARS update totals:              1.17648820 seconds
+Dijkstra update totals:            2.56673295 seconds
+
+AGGREGATE WORK:
+M-FARS average relaxations:        354.68
+Dijkstra average relaxations:      329076.86
+Work reduction:                    99.89%
+
+STRATEGY COUNTS:
+  SAFE_REUSE          : 7236 ( 33.13%)
+  EXACT_DECREASE      : 7280 ( 33.33%)
+  FULL_RECOMPUTATION  : 7324 ( 33.53%)
+
+====================================================================
+BREAK-EVEN ANALYSIS
+====================================================================
+
+For each configuration, M-FARS becomes beneficial when:
+  preprocessing + accumulated M-FARS updates
+  < accumulated Dijkstra update time
+
+  100 nodes | RANDOM_SMALL             | break-even at <= 5 updates
+  100 nodes | RANDOM_LARGE             | break-even at <= 5 updates
+  100 nodes | SHORTEST_PATH_SMALL      | not reached within [1, 5, 10, 25, 50]
+  100 nodes | SHORTEST_PATH_LARGE      | not reached within [1, 5, 10, 25, 50]
+  100 nodes | RANDOM_DECREASE_SMALL    | break-even at <= 5 updates
+  100 nodes | RANDOM_DECREASE_LARGE    | break-even at <= 5 updates
+  500 nodes | RANDOM_SMALL             | break-even at <= 5 updates
+  500 nodes | RANDOM_LARGE             | break-even at <= 5 updates
+  500 nodes | SHORTEST_PATH_SMALL      | not reached within [1, 5, 10, 25, 50]
+  500 nodes | SHORTEST_PATH_LARGE      | break-even at <= 50 updates
+  500 nodes | RANDOM_DECREASE_SMALL    | break-even at <= 5 updates
+  500 nodes | RANDOM_DECREASE_LARGE    | break-even at <= 5 updates
+ 1000 nodes | RANDOM_SMALL             | break-even at <= 5 updates
+ 1000 nodes | RANDOM_LARGE             | break-even at <= 5 updates
+ 1000 nodes | SHORTEST_PATH_SMALL      | break-even at <= 50 updates
+ 1000 nodes | SHORTEST_PATH_LARGE      | break-even at <= 50 updates
+ 1000 nodes | RANDOM_DECREASE_SMALL    | break-even at <= 5 updates
+ 1000 nodes | RANDOM_DECREASE_LARGE    | break-even at <= 5 updates
+ 5000 nodes | RANDOM_SMALL             | break-even at <= 5 updates
+ 5000 nodes | RANDOM_LARGE             | break-even at <= 5 updates
+ 5000 nodes | SHORTEST_PATH_SMALL      | break-even at <= 50 updates
+ 5000 nodes | SHORTEST_PATH_LARGE      | break-even at <= 25 updates
+ 5000 nodes | RANDOM_DECREASE_SMALL    | break-even at <= 5 updates
+ 5000 nodes | RANDOM_DECREASE_LARGE    | break-even at <= 5 updates
+
+METHODOLOGY:
+1. One graph is generated for each experiment.
+2. M-FARS preprocessing is paid exactly once.
+3. Multiple updates are applied to that SAME graph.
+4. Dijkstra is rerun after every update.
+5. Dijkstra remains the correctness oracle.
+6. Verification time is not counted as M-FARS update time.
+7. Amortized M-FARS time = preprocessing + all M-FARS updates.
+8. Work reduction uses edge-relaxation counts.
+
+NOTE:
+V1.4 is designed to test whether the preprocessing cost is recovered over repeated dynamic updates.
+====================================================================
+PS C:\Users\disha\OneDrive\Desktop\DAA\MFARS_Project> 
